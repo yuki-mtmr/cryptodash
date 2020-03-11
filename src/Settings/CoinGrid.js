@@ -14,7 +14,7 @@ function getCoinsToDisplay(coinList, topSection) {
   return Object.keys(coinList).slice(0, topSection ? 10 : 100);
 }
 
-export default function (topSection) {
+export default function ({ topSection }) {
   return <AppContext.Consumer>
     {({ coinList }) => <CoinGridStyled>
       {getCoinsToDisplay(coinList, topSection).map(coinKey =>
