@@ -21,7 +21,7 @@ export const DeletableTile = styled(SelectableTile)`
   }
 `;
 
-export const DisableTile = styled(Tile)`
+export const DisabledTile = styled(Tile)`
     pointer-events: none;
     opacity: 0.4;
 `;
